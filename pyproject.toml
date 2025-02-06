@@ -5,13 +5,22 @@ description = "Add your description here"
 authors = [
     { name = "jimothy", email = "timothynewton1998@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "redis>=5.2.1",
+    "flask>=3.1.0",
+    "flask-session>=0.8.0",
+    "mongoengine>=0.29.1",
+    "black>=25.1.0",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.rye.scripts]
+dev = "python src/run.py"
 
 [tool.rye]
 managed = true
