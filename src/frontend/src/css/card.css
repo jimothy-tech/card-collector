@@ -1,0 +1,29 @@
+.rarity-label.common {
+    text-shadow: 0 0 8px #FFD700; /* Gold for common cards */
+}
+
+.rarity-label.uncommon {
+    text-shadow: 0 0 8px #00FF00; /* Green for uncommon cards */
+}
+
+.rarity-label.rare {
+    text-shadow: 0 0 8px #007ACC; /* Blue for rare cards */
+}
+
+.rarity-label.ultra_rare {
+    text-shadow: 0 0 8px #FF0000; /* Red for epic cards */
+}
+
+.rarity-label.legendary {
+    text-shadow: 0 0 8px #FF00FF; /* Purple for legendary cards */
+}
+
+.card {
+    transform: translateY(300%);
+    transition: transform 0.8s ease-out;
+    padding: 0;
+}
+
+.reveal-card {
+    transform: translate(0%);
+}

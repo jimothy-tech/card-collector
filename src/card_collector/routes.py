@@ -27,6 +27,11 @@ def get_random_cards():
                 draw = random.choice(
                     card_map[rarity]
                 )
+                while draw in drawn_cards:
+                    #keep redrawing until we get a unique card
+                    draw = random.choice(
+                        card_map[rarity]
+                    )
                 drawn_cards.append(draw)
     return jsonify({"drawn_cards": drawn_cards}), 200
 

@@ -25,7 +25,10 @@ dnspython==2.7.0
     # via pymongo
 flask==3.1.0
     # via card-collector
+    # via flask-cors
     # via flask-session
+flask-cors==5.0.0
+    # via card-collector
 flask-session==0.8.0
     # via card-collector
 itsdangerous==2.2.0

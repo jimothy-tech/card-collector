@@ -1,0 +1,11 @@
+.hand {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100dvw;
+    height: 45dvh;
+    justify-content: center;
+    align-items: center;
+}

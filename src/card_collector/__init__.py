@@ -2,6 +2,7 @@ from flask import Flask
 import mongoengine as me
 import os
 from flask_session import Session
+from flask_cors import CORS
 from card_collector.routes import api
 
 
@@ -16,9 +17,9 @@ def create_app(config_class=None, logging_args=None):
     # Initialize MongoEngine
     # me.connect(host=os.getenv("MONGO_URI_DEV"), db="Auth_Test")
 
-    # Register app with Flask-Session
+    # Register app with Flask-Session, Flask cors
     Session(app)
-
+    CORS(app)
     app.register_blueprint(api)
 
     # Register blueprints
